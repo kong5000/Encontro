@@ -9,12 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = ContentViewModel()
-    
+    let hasPartner = false
     var body: some View {
         Group{
             if viewModel.userSession != nil {
-                InboxView()
+                if hasPartner{
+                    InboxView()
+                } else{
+                    MatchView()
+                }
             }else{
+                
                 LoginView()
             }
         }

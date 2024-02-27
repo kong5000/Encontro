@@ -56,6 +56,9 @@
 		53C13FAF2B8CC8FA00EB589F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53C13FAD2B8CC8FA00EB589F /* DataModel.xcdatamodeld */; };
 		53C13FB22B8D2CE200EB589F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 53C13FB12B8D2CE200EB589F /* FirebaseMessaging */; };
 		53C13FB62B8D327600EB589F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13FB52B8D327600EB589F /* NotificationManager.swift */; };
+		53C13FD42B8E67CB00EB589F /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13FD32B8E67CB00EB589F /* MatchView.swift */; };
+		53C13FD72B8E6C6C00EB589F /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13FD62B8E6C6C00EB589F /* MatchViewModel.swift */; };
+		53C13FD92B8E6D8300EB589F /* MatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13FD82B8E6D8300EB589F /* MatchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +101,9 @@
 		53C13FB32B8D2CF500EB589F /* Encontro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Encontro.entitlements; sourceTree = "<group>"; };
 		53C13FB42B8D2D0A00EB589F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		53C13FB52B8D327600EB589F /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		53C13FD32B8E67CB00EB589F /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		53C13FD62B8E6C6C00EB589F /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
+		53C13FD82B8E6D8300EB589F /* MatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 				53C13F922B8BD07B00EB589F /* ProfileImageView.swift */,
 				53C13F962B8BD1AE00EB589F /* NewMessageViewModel.swift */,
 				53C13F942B8BD19000EB589F /* NewMessageView.swift */,
+				53C13FD52B8E6C3C00EB589F /* MatchView */,
 				53C13F0F2B89064200EB589F /* ContentView.swift */,
 				53C13FB52B8D327600EB589F /* NotificationManager.swift */,
 				53C13F7E2B8B8B7400EB589F /* UserListView.swift */,
@@ -281,6 +288,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		53C13FD52B8E6C3C00EB589F /* MatchView */ = {
+			isa = PBXGroup;
+			children = (
+				53C13FD32B8E67CB00EB589F /* MatchView.swift */,
+				53C13FD62B8E6C6C00EB589F /* MatchViewModel.swift */,
+				53C13FD82B8E6D8300EB589F /* MatchService.swift */,
+			);
+			path = MatchView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,6 +390,7 @@
 			files = (
 				53C13F2C2B89232200EB589F /* InboxViewModel.swift in Sources */,
 				53C13F7A2B8B63BF00EB589F /* UserService.swift in Sources */,
+				53C13FD72B8E6C6C00EB589F /* MatchViewModel.swift in Sources */,
 				53C13F212B89072E00EB589F /* LoginViewModel.swift in Sources */,
 				53C13F252B8918DD00EB589F /* RegistrationViewModel.swift in Sources */,
 				53C13F342B89FC4800EB589F /* ChatView.swift in Sources */,
@@ -397,9 +415,11 @@
 				53C13F992B8BD28F00EB589F /* ProfileView.swift in Sources */,
 				53C13F812B8B8B8D00EB589F /* UserListViewModel.swift in Sources */,
 				53C13F8F2B8BCB2100EB589F /* RecentMessagesService.swift in Sources */,
+				53C13FD92B8E6D8300EB589F /* MatchService.swift in Sources */,
 				53C13FAF2B8CC8FA00EB589F /* DataModel.xcdatamodeld in Sources */,
 				53C13F9B2B8BD30700EB589F /* ProfileViewModel.swift in Sources */,
 				53C13F872B8BB65F00EB589F /* Date.swift in Sources */,
+				53C13FD42B8E67CB00EB589F /* MatchView.swift in Sources */,
 				53C13F0E2B89064200EB589F /* CartaChatApp.swift in Sources */,
 				53C13F232B8916B800EB589F /* RegistrationView.swift in Sources */,
 				53C13F312B89259100EB589F /* User.swift in Sources */,
