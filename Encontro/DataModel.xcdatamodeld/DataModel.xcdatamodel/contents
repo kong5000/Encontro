@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ArchiveMessage" representedClassName="ArchiveMessage" syncable="YES" codeGenerationType="class">
+        <attribute name="chatPartnerId" attributeType="String"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fromId" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="isFromCurrentUser" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="messageText" attributeType="String"/>
+        <attribute name="toId" attributeType="String"/>
+    </entity>
+</model>
