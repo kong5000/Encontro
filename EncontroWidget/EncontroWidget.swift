@@ -20,6 +20,17 @@ struct Provider: TimelineProvider {
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         
+        if let sharedUserDefaults = UserDefaults(suiteName: "group.com.keith.Encontro") {
+            if let userId = sharedUserDefaults.string(forKey: "uid") {
+               
+                print(userId)
+            }else{
+                print("No user id found")
+            }
+        }else{
+            print("no connect")
+        }
+        
         let date = Date()
         let nextUpdate = Calendar.current.date(byAdding: .minute, value: 15 ,to: date)!
         
