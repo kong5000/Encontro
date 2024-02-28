@@ -11,6 +11,12 @@
 		530FF4EE2B8F5DAF00834D89 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF4ED2B8F5DAF00834D89 /* DateValue.swift */; };
 		530FF4F02B8F5DEC00834D89 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF4EF2B8F5DEC00834D89 /* CalendarViewModel.swift */; };
 		530FF5592B8F940A00834D89 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF5582B8F940A00834D89 /* Secrets.swift */; };
+		530FF55F2B8FB7D700834D89 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530FF4F62B8F67BE00834D89 /* WidgetKit.framework */; };
+		530FF5602B8FB7D700834D89 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530FF4F82B8F67BE00834D89 /* SwiftUI.framework */; };
+		530FF5632B8FB7D700834D89 /* EncontroWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF5622B8FB7D700834D89 /* EncontroWidgetBundle.swift */; };
+		530FF5652B8FB7D700834D89 /* EncontroWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF5642B8FB7D700834D89 /* EncontroWidget.swift */; };
+		530FF5672B8FB7D900834D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530FF5662B8FB7D900834D89 /* Assets.xcassets */; };
+		530FF56B2B8FB7D900834D89 /* EncontroWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 530FF55E2B8FB7D700834D89 /* EncontroWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		53C13F0E2B89064200EB589F /* CartaChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F0D2B89064200EB589F /* CartaChatApp.swift */; };
 		53C13F102B89064200EB589F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F0F2B89064200EB589F /* ContentView.swift */; };
 		53C13F122B89064400EB589F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C13F112B89064400EB589F /* Assets.xcassets */; };
@@ -63,6 +69,16 @@
 		53C13FD92B8E6D8300EB589F /* MatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13FD82B8E6D8300EB589F /* MatchService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		530FF5692B8FB7D900834D89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53C13F022B89064200EB589F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 530FF55D2B8FB7D700834D89;
+			remoteInfo = EncontroWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		530FF50C2B8F67C100834D89 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -70,6 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				530FF56B2B8FB7D900834D89 /* EncontroWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +101,11 @@
 		530FF4F82B8F67BE00834D89 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		530FF5572B8F923200834D89 /* EncontroWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EncontroWidgetExtension.entitlements; sourceTree = "<group>"; };
 		530FF5582B8F940A00834D89 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		530FF55E2B8FB7D700834D89 /* EncontroWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EncontroWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		530FF5622B8FB7D700834D89 /* EncontroWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncontroWidgetBundle.swift; sourceTree = "<group>"; };
+		530FF5642B8FB7D700834D89 /* EncontroWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncontroWidget.swift; sourceTree = "<group>"; };
+		530FF5662B8FB7D900834D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		530FF5682B8FB7D900834D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53C13F0A2B89064200EB589F /* Encontro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encontro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C13F0D2B89064200EB589F /* CartaChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaChatApp.swift; sourceTree = "<group>"; };
 		53C13F0F2B89064200EB589F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,6 +149,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		530FF55B2B8FB7D700834D89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530FF5602B8FB7D700834D89 /* SwiftUI.framework in Frameworks */,
+				530FF55F2B8FB7D700834D89 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53C13F072B89064200EB589F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,11 +199,23 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
+		530FF5612B8FB7D700834D89 /* EncontroWidget */ = {
+			isa = PBXGroup;
+			children = (
+				530FF5622B8FB7D700834D89 /* EncontroWidgetBundle.swift */,
+				530FF5642B8FB7D700834D89 /* EncontroWidget.swift */,
+				530FF5662B8FB7D900834D89 /* Assets.xcassets */,
+				530FF5682B8FB7D900834D89 /* Info.plist */,
+			);
+			path = EncontroWidget;
+			sourceTree = "<group>";
+		};
 		53C13F012B89064200EB589F = {
 			isa = PBXGroup;
 			children = (
 				530FF5572B8F923200834D89 /* EncontroWidgetExtension.entitlements */,
 				53C13F0C2B89064200EB589F /* Encontro */,
+				530FF5612B8FB7D700834D89 /* EncontroWidget */,
 				53C13F0B2B89064200EB589F /* Products */,
 				53C13FB02B8D2CE200EB589F /* Frameworks */,
 			);
@@ -182,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				53C13F0A2B89064200EB589F /* Encontro.app */,
+				530FF55E2B8FB7D700834D89 /* EncontroWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,6 +386,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		530FF55D2B8FB7D700834D89 /* EncontroWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 530FF56C2B8FB7D900834D89 /* Build configuration list for PBXNativeTarget "EncontroWidgetExtension" */;
+			buildPhases = (
+				530FF55A2B8FB7D700834D89 /* Sources */,
+				530FF55B2B8FB7D700834D89 /* Frameworks */,
+				530FF55C2B8FB7D700834D89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EncontroWidgetExtension;
+			productName = EncontroWidgetExtension;
+			productReference = 530FF55E2B8FB7D700834D89 /* EncontroWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		53C13F092B89064200EB589F /* Encontro */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53C13F182B89064400EB589F /* Build configuration list for PBXNativeTarget "Encontro" */;
@@ -354,6 +415,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				530FF56A2B8FB7D900834D89 /* PBXTargetDependency */,
 			);
 			name = Encontro;
 			packageProductDependencies = (
@@ -385,6 +447,9 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					530FF55D2B8FB7D700834D89 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					53C13F092B89064200EB589F = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -408,11 +473,20 @@
 			projectRoot = "";
 			targets = (
 				53C13F092B89064200EB589F /* Encontro */,
+				530FF55D2B8FB7D700834D89 /* EncontroWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		530FF55C2B8FB7D700834D89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530FF5672B8FB7D900834D89 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53C13F082B89064200EB589F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,6 +500,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		530FF55A2B8FB7D700834D89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530FF5632B8FB7D700834D89 /* EncontroWidgetBundle.swift in Sources */,
+				530FF5652B8FB7D700834D89 /* EncontroWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53C13F062B89064200EB589F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,7 +556,73 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		530FF56A2B8FB7D900834D89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 530FF55D2B8FB7D700834D89 /* EncontroWidgetExtension */;
+			targetProxy = 530FF5692B8FB7D900834D89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		530FF56D2B8FB7D900834D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = EncontroWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3N8WK6T2HB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EncontroWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EncontroWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = keith.Encontro.EncontroWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		530FF56E2B8FB7D900834D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = EncontroWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3N8WK6T2HB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EncontroWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EncontroWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = keith.Encontro.EncontroWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		53C13F162B89064400EB589F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -596,6 +745,7 @@
 		53C13F192B89064400EB589F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Encontro/Encontro.entitlements;
@@ -628,6 +778,7 @@
 		53C13F1A2B89064400EB589F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Encontro/Encontro.entitlements;
@@ -660,6 +811,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		530FF56C2B8FB7D900834D89 /* Build configuration list for PBXNativeTarget "EncontroWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				530FF56D2B8FB7D900834D89 /* Debug */,
+				530FF56E2B8FB7D900834D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		53C13F052B89064200EB589F /* Build configuration list for PBXProject "Encontro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

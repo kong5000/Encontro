@@ -30,6 +30,10 @@ class UserService: ObservableObject {
             do{
                 let user = try snapshot?.data(as: User.self)
                 self.currentUser = user
+                let sharedUserDefaults = UserDefaults(suiteName: "group.com.keith.Encontro")
+                
+                sharedUserDefaults?.set(user?.id, forKey: "uid")
+                
                 
                 if let partnerId = user?.partnerId {
                     UserService.fetchUser(withUid: partnerId) { partner in
