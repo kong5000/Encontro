@@ -24,6 +24,11 @@ struct Provider: TimelineProvider {
             if let userId = sharedUserDefaults.string(forKey: "uid") {
                
                 print(userId)
+                
+                getWidgetMessage(userId: userId) { response, error in
+                    print(response)
+                }
+                
             }else{
                 print("No user id found")
             }
@@ -42,7 +47,42 @@ struct Provider: TimelineProvider {
 //            completion(timeline)
 //        }
     }
+    
+    
 }
+
+func getWidgetMessage(userId: String, completion: @escaping ([String: Any]?, Error?) -> Void) {
+        guard let url = URL(string: "https://us-central1-cartachat-ce6e9.cloudfunctions.net/getWidgetMessage") else {
+            let error = NSError(domain: "https://us-central1-cartachat-ce6e9.cloudfunctions.net", code: 400, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])
+            completion(nil, error)
+            return
+        }
+
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
+        components.queryItems = [URLQueryItem(name: "userId", value: userId)]
+        guard let finalURL = components.url else {
+            let error = NSError(domain: "URLComponentsError", code: 400, userInfo: [NSLocalizedDescriptionKey: "Invalid URL components"])
+            completion(nil, error)
+            return
+        }
+
+        URLSession.shared.dataTask(with: finalURL) { data, response, error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                completion(nil, error)
+            }
+
+            if let data = data {
+                do {
+                    let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                    completion(jsonResponse, nil)
+                } catch {
+                    print("Error parsing JSON: \(error.localizedDescription)")
+                    completion(nil, error)
+                }
+            }
+        }.resume()
+    }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
