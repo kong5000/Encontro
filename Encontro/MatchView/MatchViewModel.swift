@@ -25,5 +25,7 @@ class MatchViewModel: ObservableObject {
     
     func match(with partnerId: String) async throws {
         try await MatchService.match(with: partnerId)
+        //Update user data with matched partner id
+        try await UserService.shared.fetchUserData()
     }
 }

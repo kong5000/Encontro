@@ -13,13 +13,14 @@ struct ContentView: View {
     var body: some View {
         Group{
             if viewModel.userSession != nil {
-                if hasPartner{
-                    InboxView()
-                } else{
-                    MatchView()
+                if let currentUser = viewModel.currentUser {
+                    if let partner = currentUser.partnerId {
+                        InboxView()
+                    }else{
+                        MatchView()
+                    }
                 }
-            }else{
-                
+            } else{
                 LoginView()
             }
         }

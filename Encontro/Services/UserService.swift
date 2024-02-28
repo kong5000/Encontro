@@ -10,6 +10,7 @@ import Foundation
 import FirebaseFirestoreSwift
 
 class UserService: ObservableObject {
+    //TODO: Add listener to user doc to update on matches
     @Published var currentUser: User?
     
     static let shared = UserService()
@@ -38,17 +39,33 @@ class UserService: ObservableObject {
         }
     }
     
+    static func fetchUserAsync (withUid uid: String) async throws -> User? {
+        do {
+            let document = try await AppConstants.UserCollection.document(uid).getDocument()
+            if document.exists {
+                guard let user = try? document.data(as: User.self) else { return nil}
+                return user
+            } else {
+                print("Document does not exist")
+                return nil
+            }
+        } catch {
+            print("Error writing document: \(error)")
+            return nil
+        }
+    }
+    
     func saveUserFcmToken() async throws {
-         guard let fcmToken = UserDefaults.standard.value(forKey: "fcmToken") else{
-             return
-         }
-         print("Token retrieved from defaults", fcmToken)
-         var dic = [String: Any]()
-         dic["token"] = fcmToken
-         dic["timestamp"] = Timestamp()
-         guard let currentUserId = currentUser?.id else { return }
-         print("User Id found, uploading to firestore")
-         try await Firestore.firestore().collection("fcmtokens").document(currentUserId).setData(dic)
-     }
+        guard let fcmToken = UserDefaults.standard.value(forKey: "fcmToken") else{
+            return
+        }
+        print("Token retrieved from defaults", fcmToken)
+        var dic = [String: Any]()
+        dic["token"] = fcmToken
+        dic["timestamp"] = Timestamp()
+        guard let currentUserId = currentUser?.id else { return }
+        print("User Id found, uploading to firestore")
+        try await Firestore.firestore().collection("fcmtokens").document(currentUserId).setData(dic)
+    }
 }
 

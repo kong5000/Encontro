@@ -12,6 +12,7 @@ struct User: Codable, Identifiable, Hashable{
     let screenName: String
     let email: String
     var profileImageUrl: String?
+    var partnerId: String?
 }
 
 extension User {
