@@ -15,15 +15,14 @@ struct ContentView: View {
             if viewModel.userSession != nil {
                 if let currentUser = viewModel.currentUser {
                     if let partner = viewModel.currentPartner {
-//                        InboxView()
                         TabView{
                             ChatView(user: partner)
                                 .tabItem {
-                                    Label("First", systemImage: "message")
+                                    Label("Chat", systemImage: "message")
                                 }
                             Calender()
                                 .tabItem {
-                                    Label("First", systemImage: "calendar")
+                                    Label("Calendar", systemImage: "calendar")
                                 }
                         }
                     }else{
