@@ -15,6 +15,27 @@ class UserService: ObservableObject {
     
     static let shared = UserService()
     
+    init() {
+        subscribeToUserDocChanges()
+    }
+    
+    func subscribeToUserDocChanges () {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        AppConstants.UserCollection.document(uid).addSnapshotListener { snapshot, error in
+            guard let document = snapshot else {
+                print("Error fetching document: \(error!)")
+                return
+            }
+            do{
+                let user = try snapshot?.data(as: User.self)
+                self.currentUser = user
+            }catch{
+                print("Error decoding user \(error)")
+            }
+            return
+        }
+    }
+    
     @MainActor
     func fetchUserData() async throws {
         guard let uid = Auth.auth().currentUser?.uid else { return }

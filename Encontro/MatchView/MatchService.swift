@@ -27,7 +27,5 @@ class MatchService {
         try await Firestore.firestore().collection("users")
             .document(partnerId)
             .updateData(["partnerId" : currentUserId])
-        
-        try await UserService.shared.fetchUserData()
     }
 }
