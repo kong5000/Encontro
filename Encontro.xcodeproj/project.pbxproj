@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530FF4EC2B8F5D8B00834D89 /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF4EB2B8F5D8B00834D89 /* Calender.swift */; };
+		530FF4EE2B8F5DAF00834D89 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF4ED2B8F5DAF00834D89 /* DateValue.swift */; };
+		530FF4F02B8F5DEC00834D89 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF4EF2B8F5DEC00834D89 /* CalendarViewModel.swift */; };
 		53C13F0E2B89064200EB589F /* CartaChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F0D2B89064200EB589F /* CartaChatApp.swift */; };
 		53C13F102B89064200EB589F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F0F2B89064200EB589F /* ContentView.swift */; };
 		53C13F122B89064400EB589F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C13F112B89064400EB589F /* Assets.xcassets */; };
@@ -38,8 +41,6 @@
 		53C13F762B8B4ACE00EB589F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F752B8B4ACE00EB589F /* ContentViewModel.swift */; };
 		53C13F7A2B8B63BF00EB589F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F792B8B63BF00EB589F /* UserService.swift */; };
 		53C13F7D2B8B6C2E00EB589F /* ProfileSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F7C2B8B6C2E00EB589F /* ProfileSettingsViewModel.swift */; };
-		53C13F7F2B8B8B7400EB589F /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F7E2B8B8B7400EB589F /* UserListView.swift */; };
-		53C13F812B8B8B8D00EB589F /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F802B8B8B8D00EB589F /* UserListViewModel.swift */; };
 		53C13F852B8BAF2300EB589F /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F842B8BAF2300EB589F /* ChatViewModel.swift */; };
 		53C13F872B8BB65F00EB589F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F862B8BB65F00EB589F /* Date.swift */; };
 		53C13F8A2B8BBB9200EB589F /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F892B8BBB9200EB589F /* ChatService.swift */; };
@@ -62,6 +63,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530FF4EB2B8F5D8B00834D89 /* Calender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
+		530FF4ED2B8F5DAF00834D89 /* DateValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		530FF4EF2B8F5DEC00834D89 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		53C13F0A2B89064200EB589F /* Encontro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encontro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C13F0D2B89064200EB589F /* CartaChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaChatApp.swift; sourceTree = "<group>"; };
 		53C13F0F2B89064200EB589F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,8 +87,6 @@
 		53C13F752B8B4ACE00EB589F /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		53C13F792B8B63BF00EB589F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		53C13F7C2B8B6C2E00EB589F /* ProfileSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsViewModel.swift; sourceTree = "<group>"; };
-		53C13F7E2B8B8B7400EB589F /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
-		53C13F802B8B8B8D00EB589F /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		53C13F842B8BAF2300EB589F /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		53C13F862B8BB65F00EB589F /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		53C13F892B8BBB9200EB589F /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
@@ -130,6 +132,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		530FF4E92B8F5D2A00834D89 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				53C13F0F2B89064200EB589F /* ContentView.swift */,
+				53C13F752B8B4ACE00EB589F /* ContentViewModel.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		530FF4EA2B8F5D7D00834D89 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				530FF4EB2B8F5D8B00834D89 /* Calender.swift */,
+				530FF4EF2B8F5DEC00834D89 /* CalendarViewModel.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		53C13F012B89064200EB589F = {
 			isa = PBXGroup;
 			children = (
@@ -164,14 +184,12 @@
 				53C13F0D2B89064200EB589F /* CartaChatApp.swift */,
 				53C13F9C2B8BD34100EB589F /* SettingsViewModel.swift */,
 				53C13F922B8BD07B00EB589F /* ProfileImageView.swift */,
+				530FF4EA2B8F5D7D00834D89 /* Calendar */,
 				53C13F962B8BD1AE00EB589F /* NewMessageViewModel.swift */,
 				53C13F942B8BD19000EB589F /* NewMessageView.swift */,
 				53C13FD52B8E6C3C00EB589F /* MatchView */,
-				53C13F0F2B89064200EB589F /* ContentView.swift */,
+				530FF4E92B8F5D2A00834D89 /* Content */,
 				53C13FB52B8D327600EB589F /* NotificationManager.swift */,
-				53C13F7E2B8B8B7400EB589F /* UserListView.swift */,
-				53C13F802B8B8B8D00EB589F /* UserListViewModel.swift */,
-				53C13F752B8B4ACE00EB589F /* ContentViewModel.swift */,
 				53C13F7B2B8B6AC600EB589F /* Profile */,
 				53C13F112B89064400EB589F /* Assets.xcassets */,
 				53C13F132B89064400EB589F /* Preview Content */,
@@ -227,6 +245,7 @@
 		53C13F2D2B89248500EB589F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				530FF4ED2B8F5DAF00834D89 /* DateValue.swift */,
 				53C13F2E2B89248F00EB589F /* Message.swift */,
 				53C13F302B89259100EB589F /* User.swift */,
 			);
@@ -391,6 +410,7 @@
 				53C13F2C2B89232200EB589F /* InboxViewModel.swift in Sources */,
 				53C13F7A2B8B63BF00EB589F /* UserService.swift in Sources */,
 				53C13FD72B8E6C6C00EB589F /* MatchViewModel.swift in Sources */,
+				530FF4F02B8F5DEC00834D89 /* CalendarViewModel.swift in Sources */,
 				53C13F212B89072E00EB589F /* LoginViewModel.swift in Sources */,
 				53C13F252B8918DD00EB589F /* RegistrationViewModel.swift in Sources */,
 				53C13F342B89FC4800EB589F /* ChatView.swift in Sources */,
@@ -405,7 +425,6 @@
 				53C13F972B8BD1AE00EB589F /* NewMessageViewModel.swift in Sources */,
 				53C13F912B8BD03D00EB589F /* InboxRowView.swift in Sources */,
 				53C13FB62B8D327600EB589F /* NotificationManager.swift in Sources */,
-				53C13F7F2B8B8B7400EB589F /* UserListView.swift in Sources */,
 				53C13F932B8BD07B00EB589F /* ProfileImageView.swift in Sources */,
 				53C13F7D2B8B6C2E00EB589F /* ProfileSettingsViewModel.swift in Sources */,
 				53C13F9D2B8BD34100EB589F /* SettingsViewModel.swift in Sources */,
@@ -413,15 +432,16 @@
 				53C13F742B8A170300EB589F /* AuthenticationService.swift in Sources */,
 				53C13F362B8A083D00EB589F /* ChatRow.swift in Sources */,
 				53C13F992B8BD28F00EB589F /* ProfileView.swift in Sources */,
-				53C13F812B8B8B8D00EB589F /* UserListViewModel.swift in Sources */,
 				53C13F8F2B8BCB2100EB589F /* RecentMessagesService.swift in Sources */,
 				53C13FD92B8E6D8300EB589F /* MatchService.swift in Sources */,
 				53C13FAF2B8CC8FA00EB589F /* DataModel.xcdatamodeld in Sources */,
 				53C13F9B2B8BD30700EB589F /* ProfileViewModel.swift in Sources */,
 				53C13F872B8BB65F00EB589F /* Date.swift in Sources */,
+				530FF4EC2B8F5D8B00834D89 /* Calender.swift in Sources */,
 				53C13FD42B8E67CB00EB589F /* MatchView.swift in Sources */,
 				53C13F0E2B89064200EB589F /* CartaChatApp.swift in Sources */,
 				53C13F232B8916B800EB589F /* RegistrationView.swift in Sources */,
+				530FF4EE2B8F5DAF00834D89 /* DateValue.swift in Sources */,
 				53C13F312B89259100EB589F /* User.swift in Sources */,
 				53C13F382B8A0B4400EB589F /* ChatBubble.swift in Sources */,
 			);

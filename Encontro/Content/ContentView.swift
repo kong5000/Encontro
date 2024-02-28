@@ -21,7 +21,7 @@ struct ContentView: View {
                                 .tabItem {
                                     Label("First", systemImage: "message")
                                 }
-                            Text("VIEW")
+                            Calender()
                                 .tabItem {
                                     Label("First", systemImage: "calendar")
                                 }
