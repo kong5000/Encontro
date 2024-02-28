@@ -19,18 +19,17 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, emoji: "😀")
-            entries.append(entry)
-        }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+        
+        let date = Date()
+        let nextUpdate = Calendar.current.date(byAdding: .minute, value: 15 ,to: date)!
+        
+//        fetchWidgetMessage { widgetMessage in
+//            let entry = SimpleEntry(date: Date(), emoji: "emoji", messageData: widgetMessage)
+//            
+//            let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
+//            
+//            completion(timeline)
+//        }
     }
 }
 
