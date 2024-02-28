@@ -12,6 +12,7 @@ import Combine
 class ContentViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: User?
+    @Published var currentPartner: User?
 
     @Published var partnerId: String?
     
@@ -28,6 +29,10 @@ class ContentViewModel: ObservableObject {
         
         UserService.shared.$currentUser.sink { [weak self] user in
             self?.currentUser = user
+        }.store(in: &subscriptions)
+        
+        UserService.shared.$currentPartner.sink { [weak self] user in
+            self?.currentPartner = user
         }.store(in: &subscriptions)
     }
 }

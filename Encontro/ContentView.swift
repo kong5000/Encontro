@@ -14,8 +14,18 @@ struct ContentView: View {
         Group{
             if viewModel.userSession != nil {
                 if let currentUser = viewModel.currentUser {
-                    if let partner = currentUser.partnerId {
-                        InboxView()
+                    if let partner = viewModel.currentPartner {
+//                        InboxView()
+                        TabView{
+                            ChatView(user: partner)
+                                .tabItem {
+                                    Label("First", systemImage: "message")
+                                }
+                            Text("VIEW")
+                                .tabItem {
+                                    Label("First", systemImage: "calendar")
+                                }
+                        }
                     }else{
                         MatchView()
                     }

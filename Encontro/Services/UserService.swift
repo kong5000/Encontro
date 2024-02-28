@@ -10,8 +10,9 @@ import Foundation
 import FirebaseFirestoreSwift
 
 class UserService: ObservableObject {
-    //TODO: Add listener to user doc to update on matches
+    //TODO: Add listener to user doc to update on matches for partner
     @Published var currentUser: User?
+    @Published var currentPartner: User?
     
     static let shared = UserService()
     
@@ -29,6 +30,12 @@ class UserService: ObservableObject {
             do{
                 let user = try snapshot?.data(as: User.self)
                 self.currentUser = user
+                
+                if let partnerId = user?.partnerId {
+                    UserService.fetchUser(withUid: partnerId) { partner in
+                        self.currentPartner = partner
+                    }
+                }
             }catch{
                 print("Error decoding user \(error)")
             }
