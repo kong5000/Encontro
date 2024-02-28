@@ -15,11 +15,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, MessagingDelegate, UNUserNot
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         application.registerForRemoteNotifications()
         FirebaseApp.configure()
-        do {
-            try Auth.auth().useUserAccessGroup("\(teamId)keith.Encontro.EncontroWidget")
-        }catch{
-            print(error)
-        }
+        
         Messaging.messaging().delegate = self
         UNUserNotificationCenter.current().delegate = self
             
