@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Entry {
+struct Entry: Codable {
     var title: String
     var text: String
     var date: Date {
@@ -40,7 +40,7 @@ struct Entry {
 }
 
 class CalendarViewModel: ObservableObject {
-    @Published var entries = [Entry(title: "Title", text: "Text", imageUrl: nil, date: Date())]
+    @Published var entries = [Entry]()
     @Published var newEntryTitle = ""
     @Published var newEntryText = ""
     @Published var newEntryImageUrl: String?
@@ -48,20 +48,27 @@ class CalendarViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var errorMessage: String?
     
+    init() {
+        CalendarService.fetchUserEntries { entries in
+            self.entries = entries
+        }
+    }
+    
+    
     func addEntry() {
         let entry = Entry(title: newEntryTitle, text: newEntryText, imageUrl: newEntryImageUrl, date: date)
         
-        // Mark the beginning of an asynchronous operation
         isLoading = true
         errorMessage = nil
         
         Task {
             do {
-                //TODO: Upload image and retrieve url if image added
                 try await CalendarService.uploadEntry(entry)
-                
-                DispatchQueue.main.async { [weak self] in
-                    self?.isLoading = false
+                CalendarService.fetchUserEntries { newEntries in
+                    self.entries = newEntries
+                    DispatchQueue.main.async { [weak self] in
+                        self?.isLoading = false
+                    }
                 }
             } catch {
                 DispatchQueue.main.async { [weak self] in
