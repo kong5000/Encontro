@@ -22,11 +22,7 @@ struct ContentView: View {
                                 }
                             Text("Widget Write")
                                 .tabItem {
-                                    Label("Calendar", systemImage: "rectangle.and.pencil.and.ellipsis")
-                                }
-                            Calender()
-                                .tabItem {
-                                    Label("Calendar", systemImage: "calendar")
+                                    Label("Widget", systemImage: "rectangle.and.pencil.and.ellipsis")
                                 }
                         }
                     }else{
