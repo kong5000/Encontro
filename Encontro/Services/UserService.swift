@@ -13,6 +13,7 @@ class UserService: ObservableObject {
     //TODO: Add listener to user doc to update on matches for partner
     @Published var currentUser: User?
     @Published var currentPartner: User?
+    @Published var matchId: String?
     
     static let shared = UserService()
     
@@ -38,10 +39,13 @@ class UserService: ObservableObject {
                 
                 
                 if let partnerId = user?.partnerId {
+                    self.matchId = self.createMatchId(from: uid, and: partnerId)
+                    
                     UserService.fetchUser(withUid: partnerId) { partner in
                         self.currentPartner = partner
                     }
                 }
+                
             }catch{
                 print("Error decoding user \(error)")
             }
@@ -100,6 +104,14 @@ class UserService: ObservableObject {
         guard let currentUserId = currentUser?.id else { return }
         print("User Id found, uploading to firestore")
         try await Firestore.firestore().collection("fcmtokens").document(currentUserId).setData(dic)
+    }
+    
+    func createMatchId(from currentUserId: String, and partnerId: String) -> String {
+        let sortedIDs = [currentUserId, partnerId].sorted()
+        
+        let uniqueID = sortedIDs.joined(separator: "-")
+        
+        return uniqueID
     }
 }
 

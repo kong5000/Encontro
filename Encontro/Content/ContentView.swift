@@ -20,6 +20,10 @@ struct ContentView: View {
                                 .tabItem {
                                     Label("Chat", systemImage: "message")
                                 }
+                            Text("Widget Write")
+                                .tabItem {
+                                    Label("Calendar", systemImage: "rectangle.and.pencil.and.ellipsis")
+                                }
                             Calender()
                                 .tabItem {
                                     Label("Calendar", systemImage: "calendar")

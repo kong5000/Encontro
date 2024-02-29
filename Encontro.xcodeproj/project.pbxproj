@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5306592C2B90B77E00EE78BA /* AddEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5306592B2B90B77D00EE78BA /* AddEntryView.swift */; };
+		5306592E2B90BAD800EE78BA /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5306592D2B90BAD800EE78BA /* CalendarService.swift */; };
+		530659302B90C77C00EE78BA /* AddEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5306592F2B90C77C00EE78BA /* AddEntryViewModel.swift */; };
 		530FF4EC2B8F5D8B00834D89 /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF4EB2B8F5D8B00834D89 /* Calender.swift */; };
 		530FF4EE2B8F5DAF00834D89 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF4ED2B8F5DAF00834D89 /* DateValue.swift */; };
 		530FF4F02B8F5DEC00834D89 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF4EF2B8F5DEC00834D89 /* CalendarViewModel.swift */; };
@@ -94,6 +97,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5306592B2B90B77D00EE78BA /* AddEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryView.swift; sourceTree = "<group>"; };
+		5306592D2B90BAD800EE78BA /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+		5306592F2B90C77C00EE78BA /* AddEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewModel.swift; sourceTree = "<group>"; };
 		530FF4EB2B8F5D8B00834D89 /* Calender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
 		530FF4ED2B8F5DAF00834D89 /* DateValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		530FF4EF2B8F5DEC00834D89 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
@@ -195,6 +201,9 @@
 			children = (
 				530FF4EB2B8F5D8B00834D89 /* Calender.swift */,
 				530FF4EF2B8F5DEC00834D89 /* CalendarViewModel.swift */,
+				5306592B2B90B77D00EE78BA /* AddEntryView.swift */,
+				5306592D2B90BAD800EE78BA /* CalendarService.swift */,
+				5306592F2B90C77C00EE78BA /* AddEntryViewModel.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -516,6 +525,7 @@
 				53C13F2C2B89232200EB589F /* InboxViewModel.swift in Sources */,
 				53C13F7A2B8B63BF00EB589F /* UserService.swift in Sources */,
 				53C13FD72B8E6C6C00EB589F /* MatchViewModel.swift in Sources */,
+				5306592E2B90BAD800EE78BA /* CalendarService.swift in Sources */,
 				530FF4F02B8F5DEC00834D89 /* CalendarViewModel.swift in Sources */,
 				53C13F212B89072E00EB589F /* LoginViewModel.swift in Sources */,
 				53C13F252B8918DD00EB589F /* RegistrationViewModel.swift in Sources */,
@@ -527,6 +537,7 @@
 				53C13F952B8BD19000EB589F /* NewMessageView.swift in Sources */,
 				53C13F102B89064200EB589F /* ContentView.swift in Sources */,
 				53C13F282B891E7100EB589F /* InboxView.swift in Sources */,
+				5306592C2B90B77E00EE78BA /* AddEntryView.swift in Sources */,
 				53C13F762B8B4ACE00EB589F /* ContentViewModel.swift in Sources */,
 				53C13F972B8BD1AE00EB589F /* NewMessageViewModel.swift in Sources */,
 				53C13F912B8BD03D00EB589F /* InboxRowView.swift in Sources */,
@@ -544,6 +555,7 @@
 				53C13FAF2B8CC8FA00EB589F /* DataModel.xcdatamodeld in Sources */,
 				53C13F9B2B8BD30700EB589F /* ProfileViewModel.swift in Sources */,
 				53C13F872B8BB65F00EB589F /* Date.swift in Sources */,
+				530659302B90C77C00EE78BA /* AddEntryViewModel.swift in Sources */,
 				530FF4EC2B8F5D8B00834D89 /* Calender.swift in Sources */,
 				53C13FD42B8E67CB00EB589F /* MatchView.swift in Sources */,
 				53C13F0E2B89064200EB589F /* CartaChatApp.swift in Sources */,

@@ -83,7 +83,7 @@ struct Calender: View {
                 Text("DETAIL VIEW")
             }
             else{
-                Text("Add view")
+                AddEntryView(date: value.date)
             }
         } label: {
             VStack{
