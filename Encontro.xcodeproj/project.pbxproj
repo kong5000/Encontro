@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530659332B9114EB00EE78BA /* WidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530659322B9114EB00EE78BA /* WidgetViewModel.swift */; };
 		530FF4EE2B8F5DAF00834D89 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF4ED2B8F5DAF00834D89 /* DateValue.swift */; };
 		530FF5592B8F940A00834D89 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF5582B8F940A00834D89 /* Secrets.swift */; };
 		530FF55F2B8FB7D700834D89 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530FF4F62B8F67BE00834D89 /* WidgetKit.framework */; };
@@ -92,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		530659322B9114EB00EE78BA /* WidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewModel.swift; sourceTree = "<group>"; };
 		530FF4ED2B8F5DAF00834D89 /* DateValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		530FF4F62B8F67BE00834D89 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		530FF4F82B8F67BE00834D89 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -177,6 +179,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		530659312B9114DE00EE78BA /* WidgetWriter */ = {
+			isa = PBXGroup;
+			children = (
+				530659322B9114EB00EE78BA /* WidgetViewModel.swift */,
+			);
+			path = WidgetWriter;
+			sourceTree = "<group>";
+		};
 		530FF4E92B8F5D2A00834D89 /* Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +201,7 @@
 			children = (
 				530FF5622B8FB7D700834D89 /* EncontroWidgetBundle.swift */,
 				530FF5642B8FB7D700834D89 /* EncontroWidget.swift */,
+				530659312B9114DE00EE78BA /* WidgetWriter */,
 				530FF5662B8FB7D900834D89 /* Assets.xcassets */,
 				530FF5682B8FB7D900834D89 /* Info.plist */,
 			);
@@ -528,6 +539,7 @@
 				53C13FD92B8E6D8300EB589F /* MatchService.swift in Sources */,
 				53C13FAF2B8CC8FA00EB589F /* DataModel.xcdatamodeld in Sources */,
 				53C13F9B2B8BD30700EB589F /* ProfileViewModel.swift in Sources */,
+				530659332B9114EB00EE78BA /* WidgetViewModel.swift in Sources */,
 				53C13F872B8BB65F00EB589F /* Date.swift in Sources */,
 				53C13FD42B8E67CB00EB589F /* MatchView.swift in Sources */,
 				53C13F0E2B89064200EB589F /* CartaChatApp.swift in Sources */,
