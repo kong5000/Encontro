@@ -27,7 +27,7 @@ struct WidgetWriter: View {
                     TextField("Text", text: $viewModel.text)
                         .padding()
                     
-                    TextField("Emoji", text: $viewModel.emoji)
+                    TextField("Enter an emoji 😊", text: $viewModel.emoji)
                         .padding()
                         .onChange(of: viewModel.emoji) { newValue in
                             if newValue.count > 1 {

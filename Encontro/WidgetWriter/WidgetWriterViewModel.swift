@@ -24,7 +24,7 @@ class WidgetWriterViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var errorMessage = ""
     
-    
+    @MainActor
     func submit() async {
         isLoading = true
         do{
