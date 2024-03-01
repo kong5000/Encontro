@@ -33,7 +33,7 @@ struct Provider: TimelineProvider {
             
             switch result {
             case .success(let widgetMessage):
-                let entry = SimpleEntry(date: date, emoji: widgetMessage.emoji, text: widgetMessage.text, color: widgetMessage.color)
+                let entry = SimpleEntry(date: date, emoji: widgetMessage.emoji, text: widgetMessage.text, color: widgetMessage.hexColor)
                 entries.append(entry)
             case .failure(_):
                 let entry = SimpleEntry(date: date, emoji: "😞", text: "Failed to load", color: "white")
@@ -65,7 +65,7 @@ struct SimpleEntry: TimelineEntry {
 struct WidgetMessage: Codable {
     let text: String
     let emoji: String
-    let color: String
+    let hexColor: String
 }
 
 func fetchWidgetMessage(completion: @escaping (Result<WidgetMessage, Error>) -> Void) {
@@ -100,7 +100,7 @@ struct EncontroWidgetEntryView : View {
     
     var body: some View {
         ZStack{
-            backgroundColor(for: entry.color)
+            Color.fromHexString(entry.color)
                        .edgesIgnoringSafeArea(.all) // This line ensures the background color extends to the edges of the display.
                        .scaledToFill()
             HStack(spacing: 20){
@@ -110,8 +110,6 @@ struct EncontroWidgetEntryView : View {
                     .font(.system(size: 75))
             }
         }.scaledToFill()
-
-
     }
 }
 
@@ -158,6 +156,23 @@ struct EncontroWidget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+    }
+}
+
+extension Color {
+    static func fromHexString(_ hex: String) -> Color {
+        var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+        hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
+
+        var rgb: UInt64 = 0
+
+        Scanner(string: hexSanitized).scanHexInt64(&rgb)
+
+        let r = Double((rgb & 0xFF0000) >> 16) / 255.0
+        let g = Double((rgb & 0x00FF00) >> 8) / 255.0
+        let b = Double(rgb & 0x0000FF) / 255.0
+
+        return Color(red: r, green: g, blue: b)
     }
 }
 

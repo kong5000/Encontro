@@ -16,6 +16,9 @@
 		530FF5652B8FB7D700834D89 /* EncontroWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF5642B8FB7D700834D89 /* EncontroWidget.swift */; };
 		530FF5672B8FB7D900834D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530FF5662B8FB7D900834D89 /* Assets.xcassets */; };
 		530FF56B2B8FB7D900834D89 /* EncontroWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 530FF55E2B8FB7D700834D89 /* EncontroWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		53304A6E2B9202CF00A1168B /* WidgetWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53304A6D2B9202CF00A1168B /* WidgetWriter.swift */; };
+		53304A702B920B6C00A1168B /* PickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53304A6F2B920B6C00A1168B /* PickerItem.swift */; };
+		53304A732B92122D00A1168B /* WidgetWriterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53304A722B92122D00A1168B /* WidgetWriterViewModel.swift */; };
 		53C13F0E2B89064200EB589F /* CartaChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F0D2B89064200EB589F /* CartaChatApp.swift */; };
 		53C13F102B89064200EB589F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F0F2B89064200EB589F /* ContentView.swift */; };
 		53C13F122B89064400EB589F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C13F112B89064400EB589F /* Assets.xcassets */; };
@@ -104,6 +107,9 @@
 		530FF5642B8FB7D700834D89 /* EncontroWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncontroWidget.swift; sourceTree = "<group>"; };
 		530FF5662B8FB7D900834D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		530FF5682B8FB7D900834D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53304A6D2B9202CF00A1168B /* WidgetWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetWriter.swift; sourceTree = "<group>"; };
+		53304A6F2B920B6C00A1168B /* PickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerItem.swift; sourceTree = "<group>"; };
+		53304A722B92122D00A1168B /* WidgetWriterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetWriterViewModel.swift; sourceTree = "<group>"; };
 		53C13F0A2B89064200EB589F /* Encontro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encontro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C13F0D2B89064200EB589F /* CartaChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaChatApp.swift; sourceTree = "<group>"; };
 		53C13F0F2B89064200EB589F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -208,6 +214,15 @@
 			path = EncontroWidget;
 			sourceTree = "<group>";
 		};
+		53304A712B92121800A1168B /* WidgetWriter */ = {
+			isa = PBXGroup;
+			children = (
+				53304A6D2B9202CF00A1168B /* WidgetWriter.swift */,
+				53304A722B92122D00A1168B /* WidgetWriterViewModel.swift */,
+			);
+			path = WidgetWriter;
+			sourceTree = "<group>";
+		};
 		53C13F012B89064200EB589F = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +260,8 @@
 				53C13F0D2B89064200EB589F /* CartaChatApp.swift */,
 				53C13F9C2B8BD34100EB589F /* SettingsViewModel.swift */,
 				53C13F922B8BD07B00EB589F /* ProfileImageView.swift */,
+				53304A712B92121800A1168B /* WidgetWriter */,
+				53304A6F2B920B6C00A1168B /* PickerItem.swift */,
 				530FF5582B8F940A00834D89 /* Secrets.swift */,
 				53C13F962B8BD1AE00EB589F /* NewMessageViewModel.swift */,
 				53C13F942B8BD19000EB589F /* NewMessageView.swift */,
@@ -521,6 +538,7 @@
 				53C13F1E2B8906ED00EB589F /* LoginView.swift in Sources */,
 				53C13F8A2B8BBB9200EB589F /* ChatService.swift in Sources */,
 				53C13F952B8BD19000EB589F /* NewMessageView.swift in Sources */,
+				53304A732B92122D00A1168B /* WidgetWriterViewModel.swift in Sources */,
 				53C13F102B89064200EB589F /* ContentView.swift in Sources */,
 				53C13F282B891E7100EB589F /* InboxView.swift in Sources */,
 				53C13F762B8B4ACE00EB589F /* ContentViewModel.swift in Sources */,
@@ -529,6 +547,7 @@
 				53C13FB62B8D327600EB589F /* NotificationManager.swift in Sources */,
 				53C13F932B8BD07B00EB589F /* ProfileImageView.swift in Sources */,
 				530FF5592B8F940A00834D89 /* Secrets.swift in Sources */,
+				53304A702B920B6C00A1168B /* PickerItem.swift in Sources */,
 				53C13F7D2B8B6C2E00EB589F /* ProfileSettingsViewModel.swift in Sources */,
 				53C13F9D2B8BD34100EB589F /* SettingsViewModel.swift in Sources */,
 				53C13F2F2B89248F00EB589F /* Message.swift in Sources */,
@@ -538,6 +557,7 @@
 				53C13F8F2B8BCB2100EB589F /* RecentMessagesService.swift in Sources */,
 				53C13FD92B8E6D8300EB589F /* MatchService.swift in Sources */,
 				53C13FAF2B8CC8FA00EB589F /* DataModel.xcdatamodeld in Sources */,
+				53304A6E2B9202CF00A1168B /* WidgetWriter.swift in Sources */,
 				53C13F9B2B8BD30700EB589F /* ProfileViewModel.swift in Sources */,
 				530659332B9114EB00EE78BA /* WidgetViewModel.swift in Sources */,
 				53C13F872B8BB65F00EB589F /* Date.swift in Sources */,

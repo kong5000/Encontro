@@ -16,11 +16,15 @@ struct ContentView: View {
                 if let currentUser = viewModel.currentUser {
                     if let partner = viewModel.currentPartner {
                         TabView{
+                            ProfileView(user: currentUser)
+                                .tabItem {
+                                    Label("Profile", systemImage: "person.circle.fill")
+                                }
                             ChatView(user: partner)
                                 .tabItem {
                                     Label("Chat", systemImage: "message")
                                 }
-                            Text("Widget Write")
+                            WidgetWriter()
                                 .tabItem {
                                     Label("Widget", systemImage: "rectangle.and.pencil.and.ellipsis")
                                 }
