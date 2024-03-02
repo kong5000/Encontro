@@ -20,7 +20,11 @@ struct ChatView: View {
     
     var body: some View {
         VStack{
-            Text(user!.screenName)
+            HStack(spacing: 10){
+                ProfileImageView(user: user, size: .medium)
+                Text(user!.screenName)
+                    .font(.system(size: 25))
+            }
             ScrollViewReader { value in
                 ScrollView{
                     LazyVStack{
@@ -53,7 +57,7 @@ struct ChatView: View {
                     }
                     .padding(12)
                     .foregroundColor(.white)
-                    .background(.blue)
+                    .background(ThemeManager.themeColor)
                     .clipShape(Capsule())
                 }
                 .padding(12)

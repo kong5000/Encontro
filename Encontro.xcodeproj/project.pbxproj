@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		530659332B9114EB00EE78BA /* WidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530659322B9114EB00EE78BA /* WidgetViewModel.swift */; };
 		530FF4EE2B8F5DAF00834D89 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF4ED2B8F5DAF00834D89 /* DateValue.swift */; };
-		530FF5592B8F940A00834D89 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF5582B8F940A00834D89 /* Secrets.swift */; };
 		530FF55F2B8FB7D700834D89 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530FF4F62B8F67BE00834D89 /* WidgetKit.framework */; };
 		530FF5602B8FB7D700834D89 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530FF4F82B8F67BE00834D89 /* SwiftUI.framework */; };
 		530FF5632B8FB7D700834D89 /* EncontroWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FF5622B8FB7D700834D89 /* EncontroWidgetBundle.swift */; };
@@ -17,7 +16,6 @@
 		530FF5672B8FB7D900834D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530FF5662B8FB7D900834D89 /* Assets.xcassets */; };
 		530FF56B2B8FB7D900834D89 /* EncontroWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 530FF55E2B8FB7D700834D89 /* EncontroWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		53304A6E2B9202CF00A1168B /* WidgetWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53304A6D2B9202CF00A1168B /* WidgetWriter.swift */; };
-		53304A702B920B6C00A1168B /* PickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53304A6F2B920B6C00A1168B /* PickerItem.swift */; };
 		53304A732B92122D00A1168B /* WidgetWriterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53304A722B92122D00A1168B /* WidgetWriterViewModel.swift */; };
 		53304A752B922E2800A1168B /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53304A742B922E2800A1168B /* ThemeManager.swift */; };
 		53C13F0E2B89064200EB589F /* CartaChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F0D2B89064200EB589F /* CartaChatApp.swift */; };
@@ -28,7 +26,6 @@
 		53C13F212B89072E00EB589F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F202B89072E00EB589F /* LoginViewModel.swift */; };
 		53C13F232B8916B800EB589F /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F222B8916B800EB589F /* RegistrationView.swift */; };
 		53C13F252B8918DD00EB589F /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F242B8918DD00EB589F /* RegistrationViewModel.swift */; };
-		53C13F282B891E7100EB589F /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F272B891E7100EB589F /* InboxView.swift */; };
 		53C13F2C2B89232200EB589F /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F2B2B89232200EB589F /* InboxViewModel.swift */; };
 		53C13F2F2B89248F00EB589F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F2E2B89248F00EB589F /* Message.swift */; };
 		53C13F312B89259100EB589F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F302B89259100EB589F /* User.swift */; };
@@ -58,7 +55,6 @@
 		53C13F8F2B8BCB2100EB589F /* RecentMessagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F8E2B8BCB2100EB589F /* RecentMessagesService.swift */; };
 		53C13F912B8BD03D00EB589F /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F902B8BD03D00EB589F /* InboxRowView.swift */; };
 		53C13F932B8BD07B00EB589F /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F922B8BD07B00EB589F /* ProfileImageView.swift */; };
-		53C13F952B8BD19000EB589F /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F942B8BD19000EB589F /* NewMessageView.swift */; };
 		53C13F972B8BD1AE00EB589F /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F962B8BD1AE00EB589F /* NewMessageViewModel.swift */; };
 		53C13F992B8BD28F00EB589F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F982B8BD28F00EB589F /* ProfileView.swift */; };
 		53C13F9B2B8BD30700EB589F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F9A2B8BD30600EB589F /* ProfileViewModel.swift */; };
@@ -102,14 +98,12 @@
 		530FF4F62B8F67BE00834D89 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		530FF4F82B8F67BE00834D89 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		530FF5572B8F923200834D89 /* EncontroWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EncontroWidgetExtension.entitlements; sourceTree = "<group>"; };
-		530FF5582B8F940A00834D89 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		530FF55E2B8FB7D700834D89 /* EncontroWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EncontroWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		530FF5622B8FB7D700834D89 /* EncontroWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncontroWidgetBundle.swift; sourceTree = "<group>"; };
 		530FF5642B8FB7D700834D89 /* EncontroWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncontroWidget.swift; sourceTree = "<group>"; };
 		530FF5662B8FB7D900834D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		530FF5682B8FB7D900834D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53304A6D2B9202CF00A1168B /* WidgetWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetWriter.swift; sourceTree = "<group>"; };
-		53304A6F2B920B6C00A1168B /* PickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerItem.swift; sourceTree = "<group>"; };
 		53304A722B92122D00A1168B /* WidgetWriterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetWriterViewModel.swift; sourceTree = "<group>"; };
 		53304A742B922E2800A1168B /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		53C13F0A2B89064200EB589F /* Encontro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encontro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +115,6 @@
 		53C13F202B89072E00EB589F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		53C13F222B8916B800EB589F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		53C13F242B8918DD00EB589F /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
-		53C13F272B891E7100EB589F /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		53C13F2B2B89232200EB589F /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 		53C13F2E2B89248F00EB589F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		53C13F302B89259100EB589F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -140,7 +133,6 @@
 		53C13F8E2B8BCB2100EB589F /* RecentMessagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMessagesService.swift; sourceTree = "<group>"; };
 		53C13F902B8BD03D00EB589F /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		53C13F922B8BD07B00EB589F /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
-		53C13F942B8BD19000EB589F /* NewMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		53C13F962B8BD1AE00EB589F /* NewMessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 		53C13F982B8BD28F00EB589F /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		53C13F9A2B8BD30600EB589F /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -263,11 +255,8 @@
 				53C13F9C2B8BD34100EB589F /* SettingsViewModel.swift */,
 				53C13F922B8BD07B00EB589F /* ProfileImageView.swift */,
 				53304A712B92121800A1168B /* WidgetWriter */,
-				53304A6F2B920B6C00A1168B /* PickerItem.swift */,
-				530FF5582B8F940A00834D89 /* Secrets.swift */,
 				53C13F962B8BD1AE00EB589F /* NewMessageViewModel.swift */,
 				53304A742B922E2800A1168B /* ThemeManager.swift */,
-				53C13F942B8BD19000EB589F /* NewMessageView.swift */,
 				53C13FD52B8E6C3C00EB589F /* MatchView */,
 				530FF4E92B8F5D2A00834D89 /* Content */,
 				53C13FB52B8D327600EB589F /* NotificationManager.swift */,
@@ -316,7 +305,6 @@
 		53C13F262B891E3100EB589F /* Messages */ = {
 			isa = PBXGroup;
 			children = (
-				53C13F272B891E7100EB589F /* InboxView.swift */,
 				53C13F2B2B89232200EB589F /* InboxViewModel.swift */,
 				53C13F902B8BD03D00EB589F /* InboxRowView.swift */,
 			);
@@ -540,17 +528,13 @@
 				53C13F8D2B8BBCD400EB589F /* Constants.swift in Sources */,
 				53C13F1E2B8906ED00EB589F /* LoginView.swift in Sources */,
 				53C13F8A2B8BBB9200EB589F /* ChatService.swift in Sources */,
-				53C13F952B8BD19000EB589F /* NewMessageView.swift in Sources */,
 				53304A732B92122D00A1168B /* WidgetWriterViewModel.swift in Sources */,
 				53C13F102B89064200EB589F /* ContentView.swift in Sources */,
-				53C13F282B891E7100EB589F /* InboxView.swift in Sources */,
 				53C13F762B8B4ACE00EB589F /* ContentViewModel.swift in Sources */,
 				53C13F972B8BD1AE00EB589F /* NewMessageViewModel.swift in Sources */,
 				53C13F912B8BD03D00EB589F /* InboxRowView.swift in Sources */,
 				53C13FB62B8D327600EB589F /* NotificationManager.swift in Sources */,
 				53C13F932B8BD07B00EB589F /* ProfileImageView.swift in Sources */,
-				530FF5592B8F940A00834D89 /* Secrets.swift in Sources */,
-				53304A702B920B6C00A1168B /* PickerItem.swift in Sources */,
 				53304A752B922E2800A1168B /* ThemeManager.swift in Sources */,
 				53C13F7D2B8B6C2E00EB589F /* ProfileSettingsViewModel.swift in Sources */,
 				53C13F9D2B8BD34100EB589F /* SettingsViewModel.swift in Sources */,

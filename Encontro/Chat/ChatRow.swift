@@ -17,7 +17,7 @@ struct ChatRow: View {
                 Text(message.messageText)
                     .font(.subheadline)
                     .padding(12)
-                    .background(.blue.opacity(0.25))
+                    .background(ThemeManager.themeColor.opacity(0.25))
                     .clipShape(ChatBubble(fromCurrentUser: message.isFromCurrentUser))
                     .frame(maxWidth: UIScreen.main.bounds.width / 1.5, alignment: .trailing)
             }else{
