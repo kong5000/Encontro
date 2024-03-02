@@ -55,7 +55,6 @@
 		53C13F8F2B8BCB2100EB589F /* RecentMessagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F8E2B8BCB2100EB589F /* RecentMessagesService.swift */; };
 		53C13F912B8BD03D00EB589F /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F902B8BD03D00EB589F /* InboxRowView.swift */; };
 		53C13F932B8BD07B00EB589F /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F922B8BD07B00EB589F /* ProfileImageView.swift */; };
-		53C13F972B8BD1AE00EB589F /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F962B8BD1AE00EB589F /* NewMessageViewModel.swift */; };
 		53C13F992B8BD28F00EB589F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F982B8BD28F00EB589F /* ProfileView.swift */; };
 		53C13F9B2B8BD30700EB589F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F9A2B8BD30600EB589F /* ProfileViewModel.swift */; };
 		53C13F9D2B8BD34100EB589F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C13F9C2B8BD34100EB589F /* SettingsViewModel.swift */; };
@@ -133,7 +132,6 @@
 		53C13F8E2B8BCB2100EB589F /* RecentMessagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMessagesService.swift; sourceTree = "<group>"; };
 		53C13F902B8BD03D00EB589F /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		53C13F922B8BD07B00EB589F /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
-		53C13F962B8BD1AE00EB589F /* NewMessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 		53C13F982B8BD28F00EB589F /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		53C13F9A2B8BD30600EB589F /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		53C13F9C2B8BD34100EB589F /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -255,7 +253,6 @@
 				53C13F9C2B8BD34100EB589F /* SettingsViewModel.swift */,
 				53C13F922B8BD07B00EB589F /* ProfileImageView.swift */,
 				53304A712B92121800A1168B /* WidgetWriter */,
-				53C13F962B8BD1AE00EB589F /* NewMessageViewModel.swift */,
 				53304A742B922E2800A1168B /* ThemeManager.swift */,
 				53C13FD52B8E6C3C00EB589F /* MatchView */,
 				530FF4E92B8F5D2A00834D89 /* Content */,
@@ -531,7 +528,6 @@
 				53304A732B92122D00A1168B /* WidgetWriterViewModel.swift in Sources */,
 				53C13F102B89064200EB589F /* ContentView.swift in Sources */,
 				53C13F762B8B4ACE00EB589F /* ContentViewModel.swift in Sources */,
-				53C13F972B8BD1AE00EB589F /* NewMessageViewModel.swift in Sources */,
 				53C13F912B8BD03D00EB589F /* InboxRowView.swift in Sources */,
 				53C13FB62B8D327600EB589F /* NotificationManager.swift in Sources */,
 				53C13F932B8BD07B00EB589F /* ProfileImageView.swift in Sources */,

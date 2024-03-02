@@ -29,7 +29,11 @@ struct ContentView: View {
                                 .tabItem {
                                     Label("Profile", systemImage: "person.circle.fill")
                                 }
-                        }.accentColor(ThemeManager.themeColor)
+                        }
+                        .accentColor(ThemeManager.themeColor)
+                        .onAppear{
+                            Task { await NotificationManager.request() }
+                        }
                     }else{
                         MatchView()
                     }
