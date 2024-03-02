@@ -11,11 +11,8 @@ import SwiftUI
 class ThemeManager: ObservableObject {
     static var themeColor = Color(hex: "#EEB331") // Magenta
 
-    
     static var accentColor: Color = Color.red
 }
-
-
 
 extension Color {
     init(hex: String) {
